@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* ヘッダー */
+.header-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-inner h1, .header-inner nav {
+  margin: 0;
+}
+
+.header-inner a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+ border: 1px solid black;
+ display: inline-block; 
+ font-size: 34px;
+ padding: 10px; 
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px;
+  line-height: 70px;
+}
+
+nav a {
+  font-size: 34px;
+}
+
+/* メイン画像 */
+img {
+  width: 100%;
+  padding-top: 20px;
+}
+
+/* 真ん中の文字 */
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+/* セクションアバウト */
+.about-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 20px; 
+  flex-wrap: wrap;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.contents {
+  margin: 20px; 
+  padding-bottom: 30px;
+}
+
+/* 顔写真 */
+.picture {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+.works-inner {
+  max-width: 960px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+} 
+
+.item {
+  width: 25%;
+  margin: 20px;
+  padding: 0 10px;
+}
+
+.contents_li {
+  text-align: left;
+}
+
+/* フッター */
+footer p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* スマホ用スタイル */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    padding: 30px 0 20px;
+    font-size: 28px;
+  }
+
+  nav a {
+    font-size: 10px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .about-inner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+  }
+
+  .picture {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    
+  }
+
+  .content {
+    margin: 0;
+  }
+
+  nav li {
+    margin: 0 18px;
+  }
+
+  nav a {
+    font-size: 34px;
+  }
+
+  .item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}
